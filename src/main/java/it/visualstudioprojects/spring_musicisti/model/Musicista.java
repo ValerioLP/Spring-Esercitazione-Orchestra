@@ -21,10 +21,4 @@ public class Musicista {
     public void suona() {
         strumentoMusicale.suona();
     }
-
-    @PostConstruct
-    public void arrivederci() {
-        System.out.println("Arrivederci!");
-    }
-
 }
