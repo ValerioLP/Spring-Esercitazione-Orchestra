@@ -1,5 +1,7 @@
 package it.visualstudioprojects.spring_musicisti.config;
 
+import java.beans.BeanProperty;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
@@ -10,6 +12,7 @@ import it.visualstudioprojects.spring_musicisti.model.Musicista;
 import it.visualstudioprojects.spring_musicisti.model.StrumentoMusicale;
 import it.visualstudioprojects.spring_musicisti.model.Tromba;
 import it.visualstudioprojects.spring_musicisti.model.Violino;
+import it.visualstudioprojects.spring_musicisti.service.OrchestraHandler;
 
 @Configuration
 public class BeanConfiguration {
@@ -38,5 +41,10 @@ public class BeanConfiguration {
     @Bean
     public StrumentoMusicale violino() {
         return new Violino();
+    }
+
+    @Bean
+    public OrchestraHandler orchestraHandler() {
+        return new OrchestraHandler();
     }
 }
