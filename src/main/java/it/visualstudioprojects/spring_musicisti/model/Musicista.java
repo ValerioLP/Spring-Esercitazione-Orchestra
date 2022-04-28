@@ -1,7 +1,5 @@
 package it.visualstudioprojects.spring_musicisti.model;
 
-import javax.annotation.PostConstruct;
-
 public class Musicista {
 
     private StrumentoMusicale strumentoMusicale;
